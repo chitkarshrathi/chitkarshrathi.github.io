@@ -22,7 +22,7 @@ function draw() {
     ctx.font = font_size + 'px arial';
 
     for (let i = 0; i < drops.length; i++) {
-        let text = matrix[Math.floor(Math.random() * matrix.length)];
+        let text = matrix[drops[i] % matrix.length]; // Modified line
         ctx.fillText(text, i * font_size, drops[i] * font_size);
 
         if (drops[i] * font_size > height && Math.random() > 0.975) {
@@ -33,6 +33,6 @@ function draw() {
     }
 }
 
-setInterval(draw, 33 );
+setInterval(draw, 40 );
 
 window.addEventListener('resize', () => location.reload());
