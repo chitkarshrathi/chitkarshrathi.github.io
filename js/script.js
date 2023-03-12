@@ -11,7 +11,7 @@ let columns = width / font_size;
 let drops = [];
 
 for (let x = 0; x < columns; x++) {
-    drops[x] = -1 * Math.floor(Math.random() * matrix.length); // Modified line
+    drops[x] = -1 * Math.floor(Math.random() * matrix.length);
 }
 
 function draw() {
@@ -35,6 +35,6 @@ function draw() {
     }
 }
 
-setInterval(draw, 33);
+setInterval(draw, 35);
 
 window.addEventListener('resize', () => location.reload());
