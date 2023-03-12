@@ -35,6 +35,6 @@ function draw() {
     }
 }
 
-setInterval(draw, 35);
+setInterval(draw, 33);
 
 window.addEventListener('resize', () => location.reload());
